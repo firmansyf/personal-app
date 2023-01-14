@@ -1,0 +1,53 @@
+$small: 480px;
+$medium: 900px;
+
+// PHONE
+@media screen and (max-width: $small) {
+  .section-satu {
+    // background-color: aqua;
+    margin: 0%;
+    width: 100%;
+    margin-bottom: 20px;
+    header {
+      //   background-color: aqua;
+      width: 100%;
+      margin: 0;
+      padding: 50px;
+
+      .this-me {
+        font-size: 3rem;
+      }
+
+      span.title-position {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      div.description-me {
+        //   background-color: aqua;
+        width: 100%;
+      }
+    }
+
+    .menu-nav {
+      margin-top: -20px;
+      width: 100%;
+
+      .section-link {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // background-color: aqua;
+      }
+
+      .section-nav-link {
+        max-width: 90%;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.section-experience {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container-experience {
+  // background-color: rgb(187, 227, 187);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.container-header {
+  width: 50%;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+.container-header header {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.experience-timeline {
+  // background-color: red;
+  margin-top: 5px;
+  width: 50%;
+  border-left: 2px #eee solid;
+}
