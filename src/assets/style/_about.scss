@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: url("../img/patern_1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .link-nav-about {
   width: 100%;
   //   background-color: orange;
-}
-
-.link-nav-about span {
   padding-left: 25%;
 }
 

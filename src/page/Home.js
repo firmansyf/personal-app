@@ -28,51 +28,58 @@ function Home() {
   ];
 
   return (
-    <div className="flex flex-col">
-      <div className="section-satu flex flex-col justify-center items-center">
-        <header
-          className="header-title flex flex-col justify-center items-start"
-          // style={{ backgroundColor: "green" }}
-        >
-          <div className="text-6xl this-me">
-            <span className="font-light">
-              Hi i'm <strong className="text-name">Yusuf Firmansyah</strong>{" "}
-              <span style={{ fontSize: "17px" }}>he/him</span>
-            </span>
-          </div>
-          <span
-            className="title-position text-2xl font-light mt-2 flex"
-            // style={{ backgroundColor: "blue" }}
+    <>
+      <div className="navbar-name sticky top-0">
+        <span>Hi, i'am Yusuf Firmansyah</span>
+      </div>
+      <div className="flex flex-col">
+        <div className="section-satu flex flex-col justify-center items-center">
+          <header
+            className="header-title flex flex-col justify-center items-start"
+            // style={{ backgroundColor: "green" }}
           >
-            Frontend Web Developer
-          </span>
-          <div className="description-me w-9/12 text-lg font-light mt-2">
-            Writing for elegant users interface on the client side, can be
-            implemented in Reactjs javascript library, and can work remotely.
-          </div>
-        </header>
-        <div className="menu-nav flex justify-center">
-          <div className="section-link mt-7 flex items-center justify-center flex-wrap">
-            {Array.isArray(dataNav) &&
-              dataNav?.map(({ label, path, description }) => {
-                return (
-                  <>
-                    <Link to={path}>
-                      <div className="section-nav-link">
-                        <div className="text-3xl label-title-menu">{label}</div>
-                        <div className="text-sm mt-2 font-normal decription-menu">
-                          {description}
+            <div className="text-6xl this-me">
+              <span className="font-light">
+                Hi i'm <strong className="text-name">Yusuf Firmansyah</strong>{" "}
+                <span style={{ fontSize: "17px" }}>he/him</span>
+              </span>
+            </div>
+            <span
+              className="title-position text-2xl font-light mt-2 flex"
+              // style={{ backgroundColor: "blue" }}
+            >
+              Frontend Web Developer
+            </span>
+            <div className="description-me w-9/12 text-lg font-light mt-2">
+              Writing for elegant users interface on the client side, can be
+              implemented in Reactjs javascript library, and can work remotely.
+            </div>
+          </header>
+          <div className="menu-nav flex justify-center">
+            <div className="section-link mt-7 flex items-center justify-center flex-wrap">
+              {Array.isArray(dataNav) &&
+                dataNav?.map(({ label, path, description }) => {
+                  return (
+                    <>
+                      <Link to={path}>
+                        <div className="section-nav-link">
+                          <div className="text-3xl label-title-menu">
+                            {label}
+                          </div>
+                          <div className="text-sm mt-2 font-normal decription-menu">
+                            {description}
+                          </div>
                         </div>
-                      </div>
-                    </Link>
-                  </>
-                );
-              })}
+                      </Link>
+                    </>
+                  );
+                })}
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 

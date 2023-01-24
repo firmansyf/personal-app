@@ -3,6 +3,12 @@ $medium: 900px;
 
 // PHONE
 @media screen and (max-width: $small) {
+  // Home Responsive
+  .navbar-name {
+    display: block;
+    background-color: #eee;
+    height: 50px;
+  }
   .section-satu {
     // background-color: aqua;
     margin: 0%;
@@ -50,4 +56,46 @@ $medium: 900px;
   footer {
     margin-bottom: 20px;
   }
+  // END HOME
+
+  // ABOUT Responsive
+  .section-about {
+    width: 100%;
+    margin-top: 3px;
+    // background-color: aqua;
+
+    .link-nav-about {
+      // background-color: bisque;
+      padding-left: 0%;
+    }
+
+    .container-description {
+      width: 100%;
+    }
+  }
+  // End ABOUT
+
+  // EXPERINCE RESPONSIVE
+  .section-exprience {
+    width: 100%;
+    // background-color: aqua;
+    padding: 5px;
+    .container-experience {
+      width: 100%;
+      margin: 10px;
+      // box-sizing: border-box;
+      // background-color: aqua;
+    }
+
+    .container-header {
+      // background-color: aqua;
+      width: 100%;
+    }
+    .experience-timeline {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+
+  // END EXPERIENCE
 }
