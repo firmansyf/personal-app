@@ -1,5 +1,6 @@
 @import "./assets/style/styles.scss";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,8 +21,12 @@
   display: revert;
 }
 
-* {
+.rubik-font {
   font-family: "Rubik", sans-serif;
+}
+
+.quicksan {
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Preferred box-sizing value */
@@ -114,7 +119,20 @@ pre {
   all: revert;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(251, 251, 251);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(165, 165, 165, 0.7);
+  border-radius: 10px;
+}
+
 body {
-  // background-color: #eee;
+  background-color: hsl(222deg 32% 95%);
   overflow-x: hidden;
 }
