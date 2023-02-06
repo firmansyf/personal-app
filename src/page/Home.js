@@ -105,6 +105,8 @@ function Home() {
                 <FontAwesomeIcon icon={faArrowRight} className="mx-2" />
               </span>
             </Button>
+
+            <div className="bg-slate-400 h-1 mt-20"></div>
           </div>
         </div>
       </div>

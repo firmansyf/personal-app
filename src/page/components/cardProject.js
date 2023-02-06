@@ -17,21 +17,21 @@ function CardProject() {
     {
       name: "Movie",
       title: "Movie Search App",
-      description: "Created Todo App with reactjs",
+      description: "Created Movie App with reactjs",
       img: movie,
       tgl: "August 8, 2022",
     },
     {
       name: "Sticky Notes",
       title: "Sticky Notes App",
-      description: "Created Todo App with reactjs",
+      description: "Created Sticky notes App with reactjs",
       img: sticky,
       tgl: "December 12, 2021",
     },
     {
       name: "Weather",
       title: "Weather App",
-      description: "Created Todo App with reactjs",
+      description: "Created Weather App with reactjs",
       img: weather,
       tgl: "September 18, 2022",
     },
@@ -51,6 +51,9 @@ function CardProject() {
                     <p className="opacity-40 mx-3 quicksan font-semibold">
                       {tgl}
                     </p>
+                    <span className="description-data quicksan font-semibold">
+                      {description}
+                    </span>
                   </div>
                 </Link>
               </div>

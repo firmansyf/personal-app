@@ -19,10 +19,17 @@
   width: 100%;
   height: 70px;
   bottom: 0;
+
+  .description-data {
+    display: none;
+  }
 }
 
 .card-project:hover {
   .section-project-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: $basicColor;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -31,5 +38,9 @@
     opacity: 0.5;
     width: 100%;
     height: 100%;
+
+    .description-data {
+      display: block;
+    }
   }
 }
