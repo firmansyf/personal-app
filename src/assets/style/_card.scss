@@ -1,0 +1,46 @@
+@import "./variable";
+
+.card-project {
+  border: 2px solid #dcdcdc;
+  border-radius: 30px;
+  position: relative;
+}
+
+.img-project {
+  border-radius: 30px;
+  z-index: -10;
+}
+
+.section-project-description {
+  background-color: $basicColor;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+
+  .description-data {
+    display: none;
+  }
+}
+
+.card-project:hover {
+  .section-project-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $basicColor;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.4s;
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+
+    .description-data {
+      display: block;
+    }
+  }
+}
